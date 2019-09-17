@@ -5,6 +5,8 @@ body {
     background-size: cover;
     font-family: Muli;
     /*Background courtesy of https://www.svgbackgrounds.com/ */
+    padding:0;
+    margin:0;
     }
     
     #outer {
@@ -45,7 +47,8 @@ body {
         text-align: center;
         width: 80%;
         margin:auto;
-        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 
     #intro {
@@ -56,13 +59,18 @@ body {
     }
 
     #portrait {
-      width: 250px;
+      /* width: 250px; */
+      max-width: 250px;
+      width:100%;
+      margin:10px;
       border-radius:50%;
       transform: rotate(15deg);
     }
     
     #map {
-      width:500px;
+      /* width:500px; */
+      width:70%;
+      max-width: 500px;
     }
     
     #hobbies {
@@ -87,7 +95,7 @@ body {
     }
     
     .project-img {
-      border: 1px solid red;
+      border: 1px solid black;
       border-radius: 50%;
       width: 250px;
       height: 250px;
@@ -97,6 +105,7 @@ body {
     .project-wrapper {
         position: relative;
         border-radius:50%;
+        width:100%;
     }
 
     #project-recipe-library:after {
@@ -139,4 +148,63 @@ body {
     
     #project-recipe-library:hover:after, #project-ah-discounter:hover:after {
       opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+
+        #outer {
+            width:100%;
+            padding:5px;
+            border: 5px solid black;
+        }
+
+        #mid {
+            padding:5px;
+            border: 5px solid black;
+        }
+
+        #inner {
+            padding: 5px;
+            border: 5px solid black;
+        }
+
+        p {
+            padding-top: 10px;
+        }
+        #intro {
+            display: block;
+        }
+
+        #portrait {
+            width:100%;
+            margin:0 15% 10px 12%;
+        }
+
+        #map {
+            width:100%;
+        }
+
+        .project-wrapper {
+            width:20%;
+            cursor: pointer;
+        }
+
+        .icon {
+            height:100px;
+            padding-right: 15px;
+          }
+
+        .project-img {
+        width:150px;
+        height:150px;
+        cursor:pointer;
+        }
+
+        #project-recipe-library:after {
+            content: none;
+        }
+    
+        #project-ah-discounter:after {
+            content: none;
+        }
     }
