@@ -163,6 +163,10 @@ body {
       opacity: 1;
     }
 
+    #links i {
+        color: black;
+    }
+
     @media (max-width: 767px) {
 
         #outer {
