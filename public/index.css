@@ -41,6 +41,14 @@ body {
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: center;
+      animation: 3s fadein forwards;
+      opacity:0;
+    }
+
+    @keyframes fadein {
+        100% {
+            opacity:1;
+        }
     }
     
     #inner h1 {
@@ -96,7 +104,7 @@ body {
 
     .icon {
       height:170px;
-      padding-right: 15px;
+      /* padding-right: 15px; */
     }
     
     .project-img {
@@ -208,7 +216,7 @@ body {
         .icon {
             width:30%;
             height:auto;
-            padding-right: 15px;
+            /* padding-right: 15px; */
           }
 
         #projects a {
